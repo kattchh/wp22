@@ -1,14 +1,16 @@
+body {
+  background-color: black;
+}
+
 @keyframes spin {
   100% { transform: rotate(360deg); transform:rotate(360deg); } }
 
-
+/*CENTER*/
   .center {
     position: absolute;
     top: 196px;
     left: 420px;
   }
-
-
 
 /*GUN*/
 .gun {
