@@ -1,5 +1,42 @@
+
 .gun {
   position: absolute;
-  top: 384px;
-  left: -196px;
+  top: 196px;
+  left: -25px;
+}
+
+.center {
+  position: absolute;
+  top: 196px;
+  left: 420px;
+}
+
+.pale {
+  position: absolute;
+  top: 196px;
+  left: 865px;
+}
+
+.stripe {
+  position: absolute;
+  top: -189px;
+  left: 197px;
+}
+
+.red {
+  position: absolute;
+  top: -189px;
+  left: 642px;
+}
+
+.sky {
+  position: absolute;
+  top: 581px;
+  left: 197px;
+}
+
+.crowd {
+  position: absolute;
+  top: 581px;
+  left: 642px;
 }
