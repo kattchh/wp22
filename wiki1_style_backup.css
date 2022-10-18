@@ -3,12 +3,6 @@
   top: 196px;
   left: -25px;
   z-index: 1;
-  animation:spin 8s linear infinite;
-}
-
-@keyframes spin {
-  100% { transform: rotate(360deg); transform:rotate(360deg); } }
-
 }
 .gun:hover {
   opacity: 0;
