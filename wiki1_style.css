@@ -1,11 +1,18 @@
-.gun_both {
+.gun {
+  position: absolute;
+  top: 196px;
+  left: -25px;
+  z-index: 1;
+}
+.gun:hover {
+  opacity: 0;
+}
+.art_gun {
   position: absolute;
   top: 196px;
   left: -25px;
 }
-.gun_both:hover {
-  top: 400px;
-}
+
 
 
 .center {
