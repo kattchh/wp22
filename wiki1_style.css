@@ -1,9 +1,18 @@
 
 .gun {
   position: absolute;
+  top: 150px;
+  left: -25px;
+
+}
+.gun:hover {
+  position: absolute;
   top: 196px;
   left: -25px;
+
 }
+
+
 
 .center {
   position: absolute;
