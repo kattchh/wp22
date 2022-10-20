@@ -3,6 +3,8 @@ body {
   overflow: hidden;
 }
 
+@keyframes spin {
+  100% { transform: rotate(360deg); transform:rotate(360deg); } }
 
 /*CENTER*/
   .center {
@@ -17,7 +19,7 @@ body {
   top: 196px;
   left: -25px;
   z-index: 1;
-
+  animation:spin 10s linear infinite;
 }
 .gun:hover {
   opacity: 0;
@@ -34,6 +36,7 @@ body {
   top: 581px;
   left: 197px;
   z-index: 1;
+  animation:spin 10s linear infinite;
 }
 .sky:hover {
   opacity: 0;
@@ -51,6 +54,7 @@ body {
   top: 196px;
   left: 865px;
   z-index: 1;
+  animation:spin 10s linear infinite;
 }
 .pale:hover {
   opacity: 0;
@@ -67,6 +71,7 @@ body {
   top: -189px;
   left: 197px;
   z-index: 1;
+  animation:spin 10s linear infinite;
 }
 .stripe:hover {
   opacity: 0;
@@ -83,6 +88,7 @@ body {
   top: -189px;
   left: 642px;
   z-index: 1;
+  animation:spin 10s linear infinite;
 }
 .red:hover {
   opacity: 0;
@@ -99,6 +105,7 @@ body {
   top: 581px;
   left: 642px;
   z-index: 1;
+  animation:spin 10s linear infinite;
 }
 .crowd:hover {
   opacity: 0;
