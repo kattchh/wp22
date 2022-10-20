@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <title>Noir Désir Discography!</title>
 <style>
-  @keyframes spin {
+@keyframes spin {
   100% { transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes flip-active {
+  100% { transform: rotatey(0.0turn); transform: rotatey(1.0turn); } }
 
 </style>
 
@@ -17,8 +19,12 @@
   <body>
 
 <!--CENTER-->
-      <img src="art_center-03.png" class="center">
-      <animation-name: spin;> </animation-name:>
+      <img
+      src="art_center-03.png"
+      class="center"
+      style="animation:flip-active 10s linear infinite;"
+      >
+
 
 
 
