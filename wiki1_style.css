@@ -3,6 +3,7 @@ body {
   overflow: hidden;
 }
 
+.front {z-index: 1;}
 
 /*CENTER*/
 .center {
@@ -16,16 +17,10 @@ body {
   position: absolute;
   top: 196px;
   left: -25px;
-  z-index: 1;
 
 }
 .gun:hover {
   opacity: 0;
-}
-.art_gun {
-  position: absolute;
-  top: 196px;
-  left: -25px;
 }
 
 /*SKY*/
@@ -33,15 +28,9 @@ body {
   position: absolute;
   top: 581px;
   left: 197px;
-  z-index: 1;
 }
 .sky:hover {
   opacity: 0;
-}
-.art_sky {
-  position: absolute;
-  top: 581px;
-  left: 197px;
 }
 
 
@@ -50,15 +39,9 @@ body {
   position: absolute;
   top: 196px;
   left: 865px;
-  z-index: 1;
 }
 .pale:hover {
   opacity: 0;
-}
-.art_pale {
-  position: absolute;
-  top: 196px;
-  left: 865px;
 }
 
 /*STRIPE*/
@@ -66,15 +49,9 @@ body {
   position: absolute;
   top: -189px;
   left: 197px;
-  z-index: 1;
 }
 .stripe:hover {
   opacity: 0;
-}
-.art_stripe {
-  position: absolute;
-  top: -189px;
-  left: 197px;
 }
 
 /*RED*/
@@ -82,15 +59,9 @@ body {
   position: absolute;
   top: -189px;
   left: 642px;
-  z-index: 1;
 }
 .red:hover {
   opacity: 0;
-}
-.art_red {
-  position: absolute;
-  top: -189px;
-  left: 642px;
 }
 
 /*CROWD*/
@@ -98,13 +69,7 @@ body {
   position: absolute;
   top: 581px;
   left: 642px;
-  z-index: 1;
 }
 .crowd:hover {
   opacity: 0;
-}
-.art_crowd {
-  position: absolute;
-  top: 581px;
-  left: 642px;
 }
