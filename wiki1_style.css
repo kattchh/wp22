@@ -2,6 +2,8 @@ body {
   background-color: black;
   overflow: hidden;
 }
+@keyframes flip-active {
+  100% { transform: rotatey(0.0turn); transform: rotatey(1.0turn); } }
 
 .front {z-index: 1;}
 
@@ -10,7 +12,14 @@ body {
   position: absolute;
   top: 196px;
   left: 420px;
-  }
+  animation:flip-active 10s linear infinite;
+}
+
+.center:click {animation-play-state:paused;
+}
+
+
+
 
 /*GUN*/
 .gun {
