@@ -3,9 +3,18 @@ body {
   overflow: hidden;
 }
 @keyframes flip-active {
-  100% { transform: rotatey(0.0turn); transform: rotatey(1.0turn); } }
+  100% { transform: rotatey(0.0turn); transform: rotatey(1.0turn); }
+}
+@keyframes enlarge {
+    100% {transform: scale(1, 1); transform:scale(1.1, 1.1)}
+  }
 
-.front {z-index: 1;}
+
+.top {z-index: 0.8;}
+.between {z-index: 0}
+.between:hover {z-index:1; }
+.bottom {z-index: -1;}
+.enlarge:hover {animation:enlarge 2s ease;}
 
 /*CENTER*/
 .center {
@@ -15,8 +24,6 @@ body {
   animation:flip-active 10s linear infinite;
 }
 
-.center:click {animation-play-state:paused;
-}
 
 
 
