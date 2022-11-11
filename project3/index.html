@@ -9,6 +9,8 @@
 	    <title>Web Programming | KATERINA | Final Project</title>
 	    <style>
 	        @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+
 	    </style>
 			<style type="text/css">
 			    body {
@@ -31,29 +33,50 @@
 						color: #937A76;
 					}
 
-			    th, td {
+					.dark {
+						color: #231F20;
+					}
+
+
+					th {
+						padding: 10px;
+						border-color:#CEC3C1;
+						border-style:solid;
+						border-width:2px;
+						background-color:#CEC3C1;
+
+					}
+
+			    td {
 			        padding: 10px;
 			        font-weight: regular;
 							border-color:#EFE6DD;
 							border-style:solid;
 							border-width:2px;
+
 			    }
 			</style>
 	</head>
 
 	<body>
+		<div>
+				<h1> 1 Year, 19 Flights </h1>
 
-		<h1> 1 Year, 19 Flights </h1>
+				<h3> <br>Superlatives </h3>
 
-		<h3> <br>Superlatives </h3>
+				<h5>
+					Cheapest flight : 39 Euros, Bari (BRI) to Malta (MLA)
+					<br>First hostel : Studio Arabas in Thessaloniki, Greece
+					<br>Best Tour : Tour of Rome at 2AM, date with Roman Geologist
+					<br>Favorite Church : Matera's cave grotto Church of Santa Maria de Idris
+					<br>Most Spontaneous : Hopped on the back of a Maltese Man's Motorcycle
+					<br>Oldest Structure Seen : Ġgantija Temples in Gozo, built in 3600 BCE
+					<br>Language Moment : Broken French conversation with an old Italian Man
+					<br>New Beginnings : Family dinner with a special someone in Barcelona
 
-		<h5>
-			Cheapest flight : 39 Euros, Bari (BRI) to Malta (MLA)
-			<br>First hostel : Studio Arabas in Thessaloniki, Greece
-			<br>Best Tour : Tour of Rome at 2AM, date with Roman Geologist
-			<br>Language Moment : Broken French conversation with an old Italian Man
-			<br>New Beginnings : Family dinner with a special someone in Barcelona
-		</h5>
+				</h5>
+				<p class="dark"> . </p>
+		</div>
 	   <!-- <table>
 	        <tr>
 	            <td>Christmas</td>
@@ -73,16 +96,15 @@
 	        </tr>
 	    </table> -->
 			<table>
-					<tr>
-							<td>TIME</td>
-							<td>FLIGHT</td>
-							<td>TO</td>
-							<td>GATE</td>
-							<td>WALK TIME</td>
-							<td>STATUS</td>
-							<td>DATE</td>
-							<td>COUNTDOWN</td>
-					</tr>
+							<th class="dark">TIME</th>
+							<th class="dark">FLIGHT</th>
+							<th class="dark">TO</th>
+							<th class="dark">GATE</th>
+							<th class="dark">WALK TIME</th>
+							<th class="dark">STATUS</th>
+							<th class="dark">DATE</th>
+							<th class="dark">COUNTDOWN</th>
+
 
 									<!-- BOS-FRA -->
 									<tr>
@@ -289,6 +311,10 @@
 										 <td><div id="clock9"><span></span>D:<span></span>H:<span></span>M:<span></span>S</div></td>
 					</tr>
 			</table>
+			<p class="dark"> .
+			<br> .
+		<br> .
+	</p>
 	</body>
 
 	</html>
