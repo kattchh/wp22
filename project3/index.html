@@ -1,15 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Web Programming | STUDENT NAME | Final Project</title>
-</head>
+	<head>
+	  <!--  <meta charset="UTF-8"> -->
+	  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
+	    <title>Web Programming | KATERINA | Final Project</title>
+	    <style>
+	        @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+	    </style>
+	</head>
 
-	<!-- Put your code here! -->
+	<body>
+	   <!-- <table>
+	        <tr>
+	            <td>Christmas</td>
+	            <td><div id="clock1">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+	        </tr>
+	        <tr>
+	            <td>New Year</td>
+	            <td><div id="clock2">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+	        </tr>
+	        <tr>
+	            <td>USA</td>
+	            <td><div id="clock3">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+	        </tr>
+	        <tr>
+	            <td>Netherlands</td>
+	            <td><div id="clock4">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+	        </tr>
+	    </table> -->
+			<table>
+					<tr>
+							<td>TIME</td>
+							<td>FLIGHT</td>
+							<td>TO</td>
+							<td>GATE</td>
+							<td>WALK TIME</td>
+							<td>STATUS</td>
+							<td>COUNTDOWN</td>
+					</tr>
 
-</body>
+					<!-- BOS-FRA -->
+					<tr>
+							<td>18:30</td>
+							<td>DE2039</td>
+							<td>FRANKFURT INTL</td>
+							<td>C1</td>
+							<td>2 MIN</td>
+							<td>DEPARTED</td>
+							<td>30.05.2022</td>
+					<!-- FRA-SOF -->
+					<tr>
+						<td>18:30</td>
+						<td>DE2039</td>
+						<td>FRANKFURT INTL</td>
+						<td>C1</td>
+						<td>2 MIN</td>
+						<td>DEPARTED</td>
+					</tr>
+					<tr>
+							<td>Netherlands</td>
 
-</html>
+					</tr>
+			</table>
+	</body>
+
+	</html>
+
+	<script type="text/javascript">
+
+	    function setTimeStamps(countdownDate, elementId) {
+	        const msTimeGoal = new Date(countdownDate).getTime();
+	        const days = (msTimeGoal - Date.now()) / 86400000;
+	        hours = (days % 1) * 24;
+	        minutes = (hours % 1) * 60;
+	        seconds = (minutes % 1) * 60;
+
+	        const clockElement = document.getElementById(elementId);
+	        const timestamps = [days, hours, minutes, seconds];
+	        for (let i = 0; i < timestamps.length; i++) {
+	            clockElement.children[i].innerHTML = Math.floor(timestamps[i]);
+	        }
+	    }
+
+	    setInterval(function() {
+	        setTimeStamps("2022-12-25", "clock1");
+	        setTimeStamps("2023-01-01", "clock2");
+	        setTimeStamps("2023-01-07T15:25:00", "clock3");
+	        setTimeStamps("2023-03-24", "clock4");
+	    }, 50);
+	</script>
+
+	<style type="text/css">
+	    body {
+	        background-color: #231F20;
+	        color: #EFE6DD;
+	        font-size: 1em;
+	        user-select: none;
+	        font-family: 'Sono', sans-serif;
+	    }
+
+	    th, td {
+	        padding: 10px;
+	        font-weight: regular;
+					border-color:white;
+					border-style:solid;
+					border-width:1px;
+	    }
+	</style>

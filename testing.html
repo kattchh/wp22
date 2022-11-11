@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--  <meta charset="UTF-8"> -->
+  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Christmas</td>
+            <td><div id="clock1">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+        </tr>
+        <tr>
+            <td>New Year</td>
+            <td><div id="clock2">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td><div id="clock3">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+        </tr>
+        <tr>
+            <td>Netherlands</td>
+            <td><div id="clock4">Just <span></span> days, <span></span> hours, <span></span> minutes and <span></span> seconds left</div></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    function setTimeStamps(countdownDate, elementId) {
+        const msTimeGoal = new Date(countdownDate).getTime();
+        const days = (msTimeGoal - Date.now()) / 86400000;
+        hours = (days % 1) * 24;
+        minutes = (hours % 1) * 60;
+        seconds = (minutes % 1) * 60;
+
+        const clockElement = document.getElementById(elementId);
+        const timestamps = [days, hours, minutes, seconds];
+        for (let i = 0; i < timestamps.length; i++) {
+            clockElement.children[i].innerHTML = Math.floor(timestamps[i]);
+        }
+    }
+
+    setInterval(function() {
+        setTimeStamps("2022-12-25", "clock1");
+        setTimeStamps("2023-01-01", "clock2");
+        setTimeStamps("2023-01-07T15:25:00", "clock3");
+        setTimeStamps("2023-03-24", "clock4");
+    }, 50);
+</script>
+
+<style type="text/css">
+    body {
+        background-color: rebeccapurple;
+        color: red;
+        font-size: 5em;
+        user-select: none;
+        font-family: 'Amatic SC', cursive;
+    }
+
+    th, td {
+        padding: 10px;
+        font-weight: bold;
+    }
+</style>
